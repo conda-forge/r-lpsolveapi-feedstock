@@ -1,4 +1,4 @@
-{% set version = '5.5.2.0-17.4' %}
+{% set version = "5.5.2.0-17.6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lpSolveAPI_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lpSolveAPI/lpSolveAPI_{{ version }}.tar.gz
-  sha256: 73631fb8a577be02455dbadd3f915b2b10792f1149b87363b04bff42808ce88f
+  sha256: edf17d3296d1dd22c150df0a150fbe9d054bab7120b9e8f488e49491654f5011
 
 build:
   merge_build_host: True  # [win]
