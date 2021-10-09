@@ -14,8 +14,9 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  number: 0
+  number: 1
   rpaths:
+    - lib/R/library/lpSolveAPI/libs
     - lib/R/lib/
     - lib/
 
@@ -29,6 +30,8 @@ requirements:
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
   host:
+    - libblas
+    - libcblas
     - r-base
   run:
     - r-base
