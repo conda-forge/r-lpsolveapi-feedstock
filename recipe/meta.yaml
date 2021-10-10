@@ -31,7 +31,6 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - libblas
-    - libcblas
     - r-base
   run:
     - r-base
