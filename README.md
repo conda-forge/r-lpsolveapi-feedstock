@@ -3,7 +3,7 @@ About r-lpsolveapi
 
 Home: https://CRAN.R-project.org/package=lpSolveAPI
 
-Package license: LGPL-2
+Package license: LGPL-2.1-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-lpsolveapi-feedstock/blob/master/LICENSE.txt)
 
