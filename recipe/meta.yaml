@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/library/lpSolveAPI/libs
     - lib/R/lib/
@@ -22,19 +22,19 @@ build:
 
 requirements:
   build:
-    - {{ compiler('c') }}              # [not win]
-    - {{ compiler('m2w64_c') }}        # [win]
-    - {{ posix }}filesystem        # [win]
+    - {{ compiler('c') }}        # [not win]
+    - {{ compiler('m2w64_c') }}  # [win]
+    - {{ posix }}filesystem      # [win]
     - {{ posix }}make
-    - {{ posix }}sed               # [win]
-    - {{ posix }}coreutils         # [win]
-    - {{ posix }}zip               # [win]
+    - {{ posix }}sed             # [win]
+    - {{ posix }}coreutils       # [win]
+    - {{ posix }}zip             # [win]
   host:
     - libblas
     - r-base
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
+    - {{ native }}gcc-libs       # [win]
 
 test:
   commands:
@@ -51,21 +51,3 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
-
-# Package: lpSolveAPI
-# Version: 5.5.2.0-17.4
-# Date: 2016-01-11
-# Title: R Interface to 'lp_solve' Version 5.5.2.0
-# Author: lp_solve <http://lpsolve.sourceforge.net/>, Kjell Konis <kjell.konis@me.com>.
-# Maintainer: ORPHANED
-# Description: The lpSolveAPI package provides an R interface to 'lp_solve', a Mixed Integer Linear Programming (MILP) solver with support for pure linear, (mixed) integer/binary, semi-continuous and special ordered sets (SOS) models.
-# License: LGPL-2
-# Repository: CRAN
-# Repository/R-Forge/Project: lpsolve
-# Repository/R-Forge/Revision: 151
-# Repository/R-Forge/DateTimeStamp: 2016-01-11 22:09:07
-# Date/Publication: 2019-08-08 07:17:31 UTC
-# NeedsCompilation: yes
-# Packaged: 2019-08-08 06:41:55 UTC; ripley
-# X-CRAN-Original-Maintainer: Kjell Konis <kjell.konis@me.com>
-# X-CRAN-Comment: Orphaned and corrected on 2019-05-28 as check issues were not addressed despite reminder. . gcc 9 warnings
