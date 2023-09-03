@@ -3,6 +3,7 @@ About r-lpsolveapi-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-lpsolveapi-feedstock/blob/main/LICENSE.txt)
 
+
 About r-lpsolveapi
 ------------------
 
@@ -11,6 +12,7 @@ Home: https://CRAN.R-project.org/package=lpSolveAPI
 Package license: LGPL-2.1-only
 
 Summary: The lpSolveAPI package provides an R interface to 'lp_solve', a Mixed Integer Linear Programming (MILP) solver with support for pure linear, (mixed) integer/binary, semi-continuous and special ordered sets (SOS) models.
+
 About r-lpsolveapi
 ------------------
 
